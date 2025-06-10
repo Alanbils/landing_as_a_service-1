@@ -64,7 +64,7 @@ curl -X POST \
   $(terragrunt output -raw api_endpoint)
 ```
 
-A minimal front-end could simply POST the HTML content to this API URL.
+A minimal front-end could simply POST a JSON body describing the modifications to this API URL.
 
 Create a `web/config.js` file by copying `web/config.example.js` and fill in
 your values. The file should export a global `config` object with the following
